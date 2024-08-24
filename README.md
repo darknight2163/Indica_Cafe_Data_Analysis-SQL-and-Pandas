@@ -45,8 +45,8 @@ The project involves exploring two key tables (menu_items and order_details): on
 
 ### Objective 1: Exploring the Menu
 
-- **Cheapest Dish**: [Edamame](Asian), Price: $5.0
-- **Most Expensive Dish**: [Shrimp Scampi](Italian), Price: $19.95
+- **Cheapest Dish**: [Edamame](https://g.co/kgs/HQEP7wQ)(Asian), Price: $5.0
+- **Most Expensive Dish**: [Shrimp Scampi](https://g.co/kgs/2qFtddf)(Italian), Price: $19.95
 - **Average Price per Category**:
   
 ![image](https://github.com/user-attachments/assets/23146c34-894e-4aeb-b8a2-987ae78e019f)
