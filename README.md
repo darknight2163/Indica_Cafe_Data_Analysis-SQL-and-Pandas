@@ -33,13 +33,27 @@ The project involves exploring two key tables (menu_items and order_details): on
 ### 2. `notebooks/`
 - **INDICA_CAFE_Analysis.ipynb**: This Jupyter notebook contains Python code for executing the SQL queries, loading data into Pandas DataFrames, and visualizing the results using libraries like Matplotlib, Seaborn, and Plotly.
 
+### 2. `main.py` (optional)
+A standalone Python script that replicates the full three-objective analysis without needing Jupyter. It reads the SQL files directly from `data/`, runs them against an in-memory SQLite database, prints a complete text report to the console, and saves the key charts as PNGs to an `outputs/` folder. Useful if you just want to run the analysis from the command line rather than through the notebook.
+
 ## How to Use the Project
 
 1. **Running SQL Queries**:  
    Download all the SQL files from the `data/` directory. First, run the `create_restaurant_db.sql` file to create the database and tables. Then, execute the objective-specific SQL files (`objective_1.sql`, `objective_2.sql`, `objective_3.sql`) one by one to perform the respective analyses.
 
-2. **Detailed Analysis**:  
-   For a detailed analysis and visualizations, open and run the Jupyter notebook `INDICA_CAFE_Analysis.ipynb` from the `notebooks/` directory. This notebook will execute the SQL queries and provide insights through data visualizations.
+2. **Detailed Analysis (Notebook)**:  
+   For a detailed, exploratory analysis and visualizations, open and run the Jupyter notebook `INDICA_CAFE_Analysis.ipynb` from the `notebooks/` directory. This notebook will execute the SQL queries and provide insights through data visualizations.
+
+3. **Command-Line Analysis (Optional)**:  
+   If you'd rather run the analysis without Jupyter, use `main.py`:
+```bash
+   python main.py
+```
+   This runs the same three objectives end-to-end, prints a full report to the terminal, and saves charts to `outputs/`. Optional flags:
+```bash
+   python main.py --data-dir ./data --no-plots
+   python main.py --output-dir ./reports
+```
 
 ## Analysis and Results
 
